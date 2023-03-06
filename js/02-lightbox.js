@@ -11,7 +11,7 @@ galleryListEl.innerHTML = makeGalleryItemsMarkup;
 function createGalleryItemsMarkup(galleryItems) {
   return galleryItems
     .map((item) => {
-      return `<li><a class="gallery__item lightbox" href="${item.original}">
+      return `<li><a class="gallery__item" href="${item.original}">
   <img class="gallery__image" src="${item.preview}" alt="${item.description}" />
 </a></li>`;
     })
